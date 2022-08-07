@@ -44,7 +44,7 @@ class CommentAdded extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('Laracasts Voting: A comment was posted on your idea')
+            ->subject('Stackerplace: A comment was posted on your post')
             ->markdown('emails.comment-added', [
                 'comment' => $this->comment,
             ]);

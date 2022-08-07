@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
 
-        <title>{{ $title ?? 'Laracasts Voting' }}</title>
+        <title>{{ $title ?? 'Stackerplace' }}</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">

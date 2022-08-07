@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
 
-        <title>Laracasts Voting</title>
+        <title>Stackerplace</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -22,7 +22,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
-        <div class="font-sans text-gray-900 antialiased">
+        <div class="font-sans antialiased text-gray-900">
             {{ $slot }}
         </div>
     </body>

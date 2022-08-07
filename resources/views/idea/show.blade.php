@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="title">
-        {{ $idea->title }} | Laracasts Voting
+        {{ $idea->title }} | Stackerplace
     </x-slot>
     <div>
         <a href="{{ $backUrl }}" class="flex items-center font-semibold hover:underline">
