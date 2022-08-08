@@ -1,0 +1,36 @@
+[
+    {
+        "type": "Group",
+        "name": "Colors",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "SpzZdhHJnsyoV2vj"
+    },
+    {
+        "type": "File",
+        "name": "c:\\users\\ajmar\\desktop\\lc-voting\\tailwind.config.js",
+        "parent_id": "SpzZdhHJnsyoV2vj",
+        "fsPath": "c:\\users\\ajmar\\desktop\\lc-voting\\tailwind.config.js",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "06qg7XxvoDNuadzb"
+    },
+    {
+        "type": "File",
+        "name": "c:\\users\\ajmar\\desktop\\lc-voting\\resources\\views\\layouts\\app.blade.php",
+        "parent_id": "SpzZdhHJnsyoV2vj",
+        "fsPath": "c:\\users\\ajmar\\desktop\\lc-voting\\resources\\views\\layouts\\app.blade.php",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "jsmYxAge1lUbS8iN"
+    },
+    {
+        "type": "Group",
+        "name": "Routing",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "5XdSh4KCzYOUQqTe"
+    }
+]
