@@ -49,5 +49,14 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "zgsaLKV6H7uv3Pkf"
+    },
+    {
+        "type": "File",
+        "name": "c:\\users\\ajmar\\desktop\\lc-voting\\resources\\views\\livewire\\ideas-index.blade.php",
+        "parent_id": "NtTn0z2lcyxoVFwe",
+        "fsPath": "c:\\users\\ajmar\\desktop\\lc-voting\\resources\\views\\livewire\\ideas-index.blade.php",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "wOZDQbIHmFYVtEu2"
     }
 ]
