@@ -32,5 +32,22 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "5XdSh4KCzYOUQqTe"
+    },
+    {
+        "type": "Group",
+        "name": "Status Filters",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "NtTn0z2lcyxoVFwe"
+    },
+    {
+        "type": "File",
+        "name": "c:\\users\\ajmar\\desktop\\lc-voting\\resources\\views\\livewire\\status-filters.blade.php",
+        "parent_id": "NtTn0z2lcyxoVFwe",
+        "fsPath": "c:\\users\\ajmar\\desktop\\lc-voting\\resources\\views\\livewire\\status-filters.blade.php",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "zgsaLKV6H7uv3Pkf"
     }
 ]
