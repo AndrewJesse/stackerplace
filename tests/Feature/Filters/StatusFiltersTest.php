@@ -16,22 +16,22 @@ class StatusFiltersTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function index_page_contains_status_filters_livewire_component()
-    {
-        Idea::factory()->create();
+    // public function index_page_contains_status_filters_livewire_component()
+    // {
+    //     Idea::factory()->create();
 
-        $this->get(route('idea.index'))
-            ->assertSeeLivewire('status-filters');
-    }
+    //     $this->get(route('idea.index'))
+    //         ->assertSeeLivewire('status-filters');
+    // }
 
-    /** @test */
-    public function show_page_contains_status_filters_livewire_component()
-    {
-        $idea = Idea::factory()->create();
+    // /** @test */
+    // public function show_page_contains_status_filters_livewire_component()
+    // {
+    //     $idea = Idea::factory()->create();
 
-        $this->get(route('idea.show', $idea))
-            ->assertSeeLivewire('status-filters');
-    }
+    //     $this->get(route('idea.show', $idea))
+    //         ->assertSeeLivewire('status-filters');
+    // }
 
     /** @test */
     public function shows_correct_status_count()
@@ -103,16 +103,16 @@ class StatusFiltersTest extends TestCase
     }
 
     /** @test */
-    public function index_page_shows_selected_status()
-    {
-        $statusImplemented = Status::factory()->create(['id' => 4, 'name' => 'Implemented']);
+    // public function index_page_shows_selected_status()
+    // {
+    //     $statusImplemented = Status::factory()->create(['id' => 4, 'name' => 'Implemented']);
 
-        $idea = Idea::factory()->create([
-            'status_id' => $statusImplemented->id,
-        ]);
+    //     $idea = Idea::factory()->create([
+    //         'status_id' => $statusImplemented->id,
+    //     ]);
 
-        $response = $this->get(route('idea.index'));
+    //     $response = $this->get(route('idea.index'));
 
-        $response->assertSee('border-blue text-gray-900');
-    }
+    //     $response->assertSee('border-blue text-gray-900');
+    // }
 }
