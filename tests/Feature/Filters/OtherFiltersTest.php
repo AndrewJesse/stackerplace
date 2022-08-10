@@ -43,7 +43,7 @@ class OtherFiltersTest extends TestCase
         ]);
 
         Livewire::test(IdeasIndex::class)
-            ->set('filter', 'Top Voted')
+            ->set('filter', 'Hot')
             ->assertViewHas('ideas', function ($ideas) {
                 return $ideas->count() === 2
                     && $ideas->first()->votes()->count() === 2
@@ -74,7 +74,7 @@ class OtherFiltersTest extends TestCase
 
         Livewire::actingAs($user)
             ->test(IdeasIndex::class)
-            ->set('filter', 'My Ideas')
+            ->set('filter', 'My Posts')
             ->assertViewHas('ideas', function ($ideas) {
                 return $ideas->count() === 2
                     && $ideas->first()->title === 'My Second Idea'
@@ -101,7 +101,7 @@ class OtherFiltersTest extends TestCase
         ]);
 
         Livewire::test(IdeasIndex::class)
-            ->set('filter', 'My Ideas')
+            ->set('filter', 'My Posts')
             ->assertRedirect(route('login'));
     }
 
@@ -134,7 +134,7 @@ class OtherFiltersTest extends TestCase
         Livewire::actingAs($user)
             ->test(IdeasIndex::class)
             ->set('category', 'Category 1')
-            ->set('filter', 'My Ideas')
+            ->set('filter', 'My Posts')
             ->assertViewHas('ideas', function ($ideas) {
                 return $ideas->count() === 2
                     && $ideas->first()->title === 'My Second Idea'
@@ -163,7 +163,7 @@ class OtherFiltersTest extends TestCase
         ]);
 
         Livewire::test(IdeasIndex::class)
-            ->set('filter', 'No Filter')
+            ->set('filter', 'New')
             ->assertViewHas('ideas', function ($ideas) {
                 return $ideas->count() === 3
                     && $ideas->first()->title === 'My Third Idea'
