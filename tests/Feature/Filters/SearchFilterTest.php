@@ -63,7 +63,7 @@ class SearchFilterTest extends TestCase
     /** @test */
     public function search_works_correctly_with_category_filters()
     {
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
         $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
 
         $statusOpen = Status::factory()->create(['name' => 'Open']);
@@ -84,7 +84,7 @@ class SearchFilterTest extends TestCase
         ]);
 
         Livewire::test(IdeasIndex::class)
-            ->set('category', 'Category 1')
+            ->set('category', 'Gold')
             ->set('search', 'Idea')
             ->assertViewHas('ideas', function ($ideas) {
                 return $ideas->count() === 2;

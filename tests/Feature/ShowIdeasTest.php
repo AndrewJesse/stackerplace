@@ -17,7 +17,7 @@ class ShowIdeasTest extends TestCase
     /** @test */
     public function list_of_ideas_shows_on_main_page()
     {
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
         $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
 
         $statusOpen = Status::factory()->create(['name' => 'OpenUnique']);
@@ -51,7 +51,7 @@ class ShowIdeasTest extends TestCase
     /** @test */
     public function single_idea_shows_correctly_on_the_show_page()
     {
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
 
         $statusOpen = Status::factory()->create(['name' => 'OpenUnique']);
 

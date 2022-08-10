@@ -66,7 +66,7 @@ class EditIdeaTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
         $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
 
         $idea = Idea::factory()->create([
@@ -97,7 +97,7 @@ class EditIdeaTest extends TestCase
         $user = User::factory()->create();
         $userB = User::factory()->create();
 
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
         $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
 
         $idea = Idea::factory()->create([
@@ -121,7 +121,7 @@ class EditIdeaTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
         $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
 
         $idea = Idea::factory()->create([

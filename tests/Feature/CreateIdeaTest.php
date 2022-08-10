@@ -61,7 +61,7 @@ class CreateIdeaTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
 
         $statusOpen = Status::factory()->create(['name' => 'Open']);
 
@@ -93,7 +93,7 @@ class CreateIdeaTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
 
         $statusOpen = Status::factory()->create(['name' => 'Open']);
 

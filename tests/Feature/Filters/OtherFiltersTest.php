@@ -110,7 +110,7 @@ class OtherFiltersTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
         $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
 
         $ideaOne = Idea::factory()->create([
@@ -133,7 +133,7 @@ class OtherFiltersTest extends TestCase
 
         Livewire::actingAs($user)
             ->test(IdeasIndex::class)
-            ->set('category', 'Category 1')
+            ->set('category', 'Gold')
             ->set('filter', 'My Posts')
             ->assertViewHas('ideas', function ($ideas) {
                 return $ideas->count() === 2
@@ -145,7 +145,7 @@ class OtherFiltersTest extends TestCase
     /** @test */
     public function no_filters_works_correctly()
     {
-        $categoryOne = Category::factory()->create(['name' => 'Category 1']);
+        $categoryOne = Category::factory()->create(['name' => 'Gold']);
 
         $ideaOne = Idea::factory()->create([
             'category_id' => $categoryOne->id,
