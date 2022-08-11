@@ -19,7 +19,7 @@ class CategoryFiltersTest extends TestCase
     public function selecting_a_category_filters_correctly()
     {
         $categoryOne = Category::factory()->create(['name' => 'Gold']);
-        $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
+        $categoryTwo = Category::factory()->create(['name' => 'Silver']);
 
         $ideaOne = Idea::factory()->create([
             'category_id' => $categoryOne->id,
@@ -45,7 +45,7 @@ class CategoryFiltersTest extends TestCase
     public function the_category_query_string_filters_correctly()
     {
         $categoryOne = Category::factory()->create(['name' => 'Gold']);
-        $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
+        $categoryTwo = Category::factory()->create(['name' => 'Silver']);
 
         $ideaOne = Idea::factory()->create([
             'category_id' => $categoryOne->id,
@@ -71,7 +71,7 @@ class CategoryFiltersTest extends TestCase
     public function selecting_a_status_and_a_category_filters_correctly()
     {
         $categoryOne = Category::factory()->create(['name' => 'Gold']);
-        $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
+        $categoryTwo = Category::factory()->create(['name' => 'Silver']);
 
         $statusOpen = Status::factory()->create(['name' => 'Open']);
         $statusConsidering = Status::factory()->create(['name' => 'Considering']);
@@ -110,7 +110,7 @@ class CategoryFiltersTest extends TestCase
     public function the_category_query_string_filters_correctly_with_status_and_category()
     {
         $categoryOne = Category::factory()->create(['name' => 'Gold']);
-        $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
+        $categoryTwo = Category::factory()->create(['name' => 'Silver']);
 
         $statusOpen = Status::factory()->create(['name' => 'Open']);
         $statusConsidering = Status::factory()->create(['name' => 'Considering']);
@@ -148,7 +148,7 @@ class CategoryFiltersTest extends TestCase
     public function selecting_all_categories_filters_correctly()
     {
         $categoryOne = Category::factory()->create(['name' => 'Gold']);
-        $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
+        $categoryTwo = Category::factory()->create(['name' => 'Silver']);
 
         $ideaOne = Idea::factory()->create([
             'category_id' => $categoryOne->id,

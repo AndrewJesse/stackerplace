@@ -64,7 +64,7 @@ class SearchFilterTest extends TestCase
     public function search_works_correctly_with_category_filters()
     {
         $categoryOne = Category::factory()->create(['name' => 'Gold']);
-        $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
+        $categoryTwo = Category::factory()->create(['name' => 'Silver']);
 
         $statusOpen = Status::factory()->create(['name' => 'Open']);
 

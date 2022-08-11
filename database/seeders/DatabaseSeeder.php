@@ -27,9 +27,9 @@ class DatabaseSeeder extends Seeder
         User::factory(19)->create();
 
         Category::factory()->create(['name' => 'Gold']);
-        Category::factory()->create(['name' => 'Category 2']);
-        Category::factory()->create(['name' => 'Category 3']);
-        Category::factory()->create(['name' => 'Category 4']);
+        Category::factory()->create(['name' => 'Silver']);
+        Category::factory()->create(['name' => 'Question']);
+        Category::factory()->create(['name' => 'Speculation']);
 
         Status::factory()->create(['name' => 'Open']);
         Status::factory()->create(['name' => 'Considering']);

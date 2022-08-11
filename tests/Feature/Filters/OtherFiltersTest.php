@@ -111,7 +111,7 @@ class OtherFiltersTest extends TestCase
         $user = User::factory()->create();
 
         $categoryOne = Category::factory()->create(['name' => 'Gold']);
-        $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
+        $categoryTwo = Category::factory()->create(['name' => 'Silver']);
 
         $ideaOne = Idea::factory()->create([
             'user_id' => $user->id,

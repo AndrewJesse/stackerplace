@@ -18,7 +18,7 @@ class ShowIdeasTest extends TestCase
     public function list_of_ideas_shows_on_main_page()
     {
         $categoryOne = Category::factory()->create(['name' => 'Gold']);
-        $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
+        $categoryTwo = Category::factory()->create(['name' => 'Silver']);
 
         $statusOpen = Status::factory()->create(['name' => 'OpenUnique']);
         $statusConsidering = Status::factory()->create(['name' => 'ConsideringUnique']);
