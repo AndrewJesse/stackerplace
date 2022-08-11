@@ -1,20 +1,19 @@
-## Build a Reddit Style website
+Build a Reddit Style website
 
-Source Code for **"Stackerplace website"** 
+Source Code for "Stackerplace website"
+Installation
 
-## Installation ##
-
-1. git clone https://github.com/AndrewJesse/stackerplace
-2. cd into folder
-3. composer update --ignore-platform-reqs
-4. Rename or copy .env.example file to .env
-5. php artisan key:generate
-6. cd C:\users\ajmar\desktop\
-7. code lc-voting
-8. Create database and add name to line 14 DB_DATABASE in .env
-9. php artisan migrate or php artisan migrate --seed if you want seed data
-10. npm install
-11. npm run dev or npm run watch
-12. php artisan serve
-13. rm -rf .git
-14. git Initialize Repository @block 1.3
+    git clone https://github.com/AndrewJesse/stackerplace
+    cd into folder
+    composer update --ignore-platform-reqs
+    Rename or copy .env.example file to .env
+    php artisan key:generate
+    cd C:\users\ajmar\desktop\
+    code lc-voting
+    Create database and add name to line 14 DB_DATABASE in .env
+    php artisan migrate or php artisan migrate --seed if you want seed data
+    npm install
+    npm run dev or npm run watch
+    php artisan serve
+    rm -rf .git
+    git Initialize Repository @block 1.3
