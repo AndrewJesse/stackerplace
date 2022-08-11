@@ -1,18 +1,20 @@
-## Build a Voting App
+## Build a Reddit Style website
 
-Source Code for **"Build a Voting App"** series on Laracasts: https://laracasts.com/series/build-a-voting-app
+Source Code for **"Stackerplace website"** 
 
-Each episode has a corresponding commit in git, so checkout the commit history for that. If you would like to go back to a particular point, you can do a `git checkout <hash_of_commit>`.
+## Installation ##
 
-## Installation
-
-1. Clone the repo and `cd` into it
-1. `composer install`
-1. Rename or copy `.env.example` file to `.env`
-1. `php artisan key:generate`
-1. Setup a database and add your database credentials in your `.env` file
-1. `php artisan migrate` or `php artisan migrate --seed` if you want seed data
-1. `npm install`
-1. `npm run dev` or `npm run watch`
-1. `php artisan serve` or use Laravel Valet
-1. Visit `localhost:8000` in your browser
+1. git clone https://github.com/AndrewJesse/stackerplace
+2. cd into folder
+3. composer update --ignore-platform-reqs
+4. Rename or copy .env.example file to .env
+5. php artisan key:generate
+6. cd C:\users\ajmar\desktop\
+7. code lc-voting
+8. Create database and add name to line 14 DB_DATABASE in .env
+9. php artisan migrate or php artisan migrate --seed if you want seed data
+10. npm install
+11. npm run dev or npm run watch
+12. php artisan serve
+13. rm -rf .git
+14. git Initialize Repository @block 1.3
