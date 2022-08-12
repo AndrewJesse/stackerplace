@@ -15,7 +15,9 @@
     <div class="hidden px-5 py-8 border-r border-gray-100 md:block">
         <div class="text-center">
             <div class="font-semibold text-2xl @if ($hasVoted) text-blue @endif">{{ $votesCount }}</div>
-            <div class="text-gray-500">Likes</div>
+            <div class="flex items-center justify-center text-gray-500 "><svg xmlns="http://www.w3.org/2000/svg" class="w-4"none" viewBox="0 0 24 24" fill="pink" stroke="red" stroke-opacity="0.2" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg></div>
         </div>
 
         <div class="mt-8">
