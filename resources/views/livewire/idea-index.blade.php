@@ -59,7 +59,7 @@
                     x-data="{ isOpen: false }"
                     class="flex items-center mt-4 space-x-2 md:mt-0"
                 >
-                    <div class="{{ 'status-'.Str::kebab($idea->status->name) }} text-xxs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">{{ $idea->status->name }}</div>
+                    {{-- <div class="{{ 'status-'.Str::kebab($idea->status->name) }} text-xxs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">{{ $idea->status->name }}</div> --}}
                 </div>
 
                 <div class="flex items-center mt-4 md:hidden md:mt-0">
