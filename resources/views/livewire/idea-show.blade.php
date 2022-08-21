@@ -2,6 +2,22 @@
 
         <div class="idea-container bg-white rounded-xl flex mt-4">
             <div class="flex flex-col md:flex-row flex-1 px-4 py-6">
+                <div class="hidden px-5 py-8 border-r border-gray-100 md:block">
+                    <div class="text-center">
+                        <div class="font-semibold text-2xl @if ($hasVoted) text-blue @endif">{{ $votesCount }}</div>
+                        <div class="flex items-center justify-center text-gray-500 "><svg xmlns="http://www.w3.org/2000/svg" class="w-4"none" viewBox="0 0 24 24" fill="pink" stroke="red" stroke-opacity="0.2" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg></div>
+                    </div>
+
+                    <div class="mt-8">
+                        @if ($hasVoted)
+                            <button wire:click.prevent="vote" class="w-20 px-4 py-3 font-bold text-white uppercase transition duration-150 ease-in border bg-blue border-blue hover:bg-blue-hover text-xxs rounded-xl">Unlike</button>
+                        @else
+                            <button wire:click.prevent="vote" class="w-20 px-4 py-3 font-bold uppercase transition duration-150 ease-in bg-gray-200 border border-gray-200 hover:border-gray-400 text-xxs rounded-xl">Like</button>
+                        @endif
+                    </div>
+                </div>
                 <div class="flex-none mx-2">
                     <a href="#">
                         <img src="{{ $idea->user->getAvatar() }}" alt="avatar" class="w-14 h-14 rounded-xl">
